@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href ="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>MY SIMPLE CODM FANDOM</title>
+</head>
+    <header>
+        <nav>
+            <ul>
+              <input type="checkbox" id="check"><label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+              <ul class="menu">
+                
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#attach">ATTACHMENT</a></li>
+    <li><a href="#character">CHARACTER</a></li>
+    <li><a href="#story">STORY</a></li>
+</ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#attach">ATTACHMENT</a></li>
+                <li><a href="#character">CHARACTER</a></li>
+                <li><a href="#story">STORY</a></li>
+            </ul>
+        </nav>
+    </header>
+     <section class="box">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="Image/cod.mp4" type="video/mp4">
+    </video>
+    <div class="row">
+        <div class="col">
+            <div class="content">
+                <h1>ABOUT</h1>
+                <p>Your ultimate resource for Call of Duty gun attachments and loadouts. Our mission is to help players optimize their in-game performance by providing detailed information, reviews, and guides on the best attachments for every weapon.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id ="attach">
+  <h1>ATTACHMENTS</h1>
+        <div class="attch">(solid attachments)</div>
+        <div class="container">
+         <div class="card__container">
+            <article class="card__article">
+               <img src="Image/dlq.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">SNIPER</span>
+                  <h2 class="card__title">DL Q33</h2>
+               </div>
+            </article>
+            
+            <article class="card__article">
+               <img src="Image/krm.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">SHOTGUN</span>
+                  <h2 class="card__title">KRM 262</h2>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="Image/pdw2.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                 <span class="card__description">SMG</span>
+                  <h2 class="card__title">PDW57</h2>
+               </div>
+            </article>
+            <article class="card__article">
+               <img src="Image/l-car.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                 <span class="card__description">PISTOL</span>
+                  <h2 class="card__title">L-CAR 9</h2>
+               </div>
+            </article>
+            <article class="card__article">
+               <img src="Image/m4.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                 <span class="card__description">AR</span>
+                  <h2 class="card__title">M4</h2>
+               </div>
+            </article>
+             <article class="card__article">
+               <img src="Image/chopper.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                 <span class="card__description">LMG</span>
+                  <h2 class="card__title">CHOPPER</h2>
+               </div>
+            </article>
+         </div>
+      </div>
+</section>
+<section id="character">
+  <h1>CHARACTERS</h1>
+    <div class="FavCharacters">
+    (my top 8 fav characters)</div><br><br><br>
+<div class="row">
+  <div class="column">
+    <img src="image/img7.jpg" alt="Motoko" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Image/img2.jpg" alt="Seraph" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Image/img3.jpg" alt="Manta Ray" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Image/img8.jpg" alt="Vivian" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="Image/img5.jpg" alt="Tedd" onclick="myFunction(this);">
+  </div>
+      <div class="column">
+    <img src="Image/img6.jpg" alt="Ghost" onclick="myFunction(this);">
+  </div>
+      <div class="column">
+    <img src="Image/img1.jpg" alt="Special-Ops" onclick="myFunction(this);">
+  </div>
+      <div class="column">
+    <img src="Image/img4.jpg" alt="Ethan" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container2">
+  
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  
+  <img id="expandedImg" style="width:100%">
+  
+
+  
+  <div id="imgtext"></div>
+</div>
+<script>
+  function myFunction(imgs) {
+  
+  var expandImg = document.getElementById("expandedImg");
+  
+  var imgText = document.getElementById("imgtext");
+
+  expandImg.src = imgs.src;
+
+  imgText.innerHTML = imgs.alt;
+  
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</section>
+<section id="story">
+  <h1>STORY</h1>
+      <div class="STORY">
+    Ghost Back Story</div><br>
+   <div class="video-container1">
+     <p>Ghost was tasked with finding Vladimir Makarov after the terrorist leader enacted World War III via the Zahkhaev Airport massacre, but would be betrayed and killed by General Shepherd. His death would be avenged by Captain Price and Soap MacTavish, who then went on to end the war and later eliminate Makarov.</p>
+     <p><a href="https://hero.fandom.com/wiki/Simon_%22Ghost%22_Riley#:~:text=Ghost%20was%20tasked%20with%20finding,war%20and%20later%20eliminate%20Makarov.">CLICK ME</a></p><br>
+     <p>YT video by: GamersPrey</p><br>
+        <video class="vid" controls autoplay loop muted poster="path/to/image.jpg">
+            <source src="Image/ghost.mp4" type="video/mp4">
+            <source src="path/to/your/video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  
+</body>
+</html>
